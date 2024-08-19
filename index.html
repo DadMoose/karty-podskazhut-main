@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,10 +11,24 @@
   <link rel="apple-touch-icon" href="./images/favicon.png" />
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
-
 <body class="page theme_dark">
   <header class="header">
     <h1 class="heading content-section header-title">Карты подскажут</h1>
+    <nav class="header__menu content-section">
+      <div class="header__logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="135" height="25">
+          <use href="./images/logo.svg#logo"></use>
+        </svg>
+      </div> 
+      <ul class="header__theme-toggler">
+        <li>
+          <button class="header__theme-button header__theme-button_type_dark">Тёмная</button>
+        </li>
+        <li>
+          <button class="header__theme-button header__theme-button_type_light header__theme-button_is-active" disabled>Светлая</button>
+        </li>
+      </ul>
+    </nav>
   </header>
   <main class="content content-section">
     <h2 class="heading content-title">Креативный подход к решению проблем</h2>
@@ -33,7 +46,6 @@
         1975 году создали композитор, музыкальный продюсер и один из основателей жанра эмбиент Брайан Ино и
         мультимедиа-художник Питер Шмидт.</p>
     </div>
-
     <figure class="content__figure">
       <picture>
         <source srcset="./images/cards-1x.avif 1x, ./images/cards-2x.avif 2x" type="image/avif">
@@ -43,7 +55,6 @@
       </picture>
       <figcaption class="content__picture-caption">Колода Oblique Strategies</figcaption>
     </figure>
-
     <div class="content__text-block">
       <p class="content__paragraph">Oblique Strategies в основном используют музыканты, но колода подходит для
         преодоления творческого кризиса в любой сфере. Её рекомендуют писателям, продакт-менеджерам, художникам и
@@ -84,10 +95,9 @@
     </ul>
     <div class="content__text-block"></div>
   </main>
-  <footer class="footer"></footer>
-
-  <!-- Раскомментируйте строчку ниже, когда вёрстка будет готова. Если вы назвали все классы. как нужно, переключатель темы будет работать -->
-  <!-- <script src="./scripts/theme-changer.js"></script> -->
+  <footer class="footer">
+    <p class="footer__copyright">vёrstka</p>
+  </footer>
+  <script src="./scripts/theme-changer.js"></script>
 </body>
-
 </html>
