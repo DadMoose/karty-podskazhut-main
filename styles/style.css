@@ -26,11 +26,11 @@ figure {
 }
 
 .page {
-  min-inline-size: 360px;
   margin: 0;
-  background-color: var(--bg-color, #F3EFEC);
   color: var(--text-color, #312A4E);
   font-family: var(--main-font, serif);
+  background-color: var(--bg-color, #F3EFEC);
+  min-inline-size: 360px;
 }
 
 .theme_dark {
@@ -78,12 +78,12 @@ button:disabled {
 }
 
 .header__theme-button {
+  border: 0;
+  color: var(--text-color);
   font-family: inherit;
   font-size: 18px;
-  color: var(--text-color);
-  cursor: pointer;
   background-color: transparent;
-  border: 0;
+  cursor: pointer;
 }
 
 .header__theme-button:hover {
@@ -95,21 +95,20 @@ button:disabled {
   text-decoration-color: rgba(179, 179, 179, 0.5);
 }
 
-
 .header__theme-button_is-active {
   position: relative;
   font-weight: 700;
 }
 
 .header__theme-button_is-active::after {
-  position: absolute;
-  z-index: -1;
-  left: -0px;
-  bottom: 0px;
   content: '';
+  position: absolute;
+  bottom: 0px;
+  left: -0px;
+  z-index: -1;
+  background-color: var(--accent-color);
   inline-size: 100%;
   block-size: 0.55em;
-  background-color: var(--accent-color);
 }
 
 .theme_dark .header__theme-button_is-active::after {
@@ -119,8 +118,8 @@ button:disabled {
 
 .heading {
   font-family: var(--accent-font);
-  line-height: 90%;
   font-weight: 600;
+  line-height: 90%;
   text-align: center;
 }
 
@@ -133,9 +132,9 @@ button:disabled {
 }
 
 .content-title {
-  font-size: 30px;
   margin-block-start: 7vi;
   margin-block-end: 2.5vi;
+  font-size: 30px;
 }
 
 .content__text-block {
@@ -144,15 +143,15 @@ button:disabled {
 
 .content__text-block_type_first-lettered .content__paragraph:first-child:first-letter {
   display: inline-block;
-  background-color: var(--accent-color, #FFAB6B);
-  padding: 0 4px;
   margin-inline-end: 1px;
-  font-size: 30px;
+  padding: 0 4px;
   font-weight: 700;
+  font-size: 30px;
+  background-color: var(--accent-color, #FFAB6B);
 }
 
 .theme_dark .content__text-block_type_first-lettered .content__paragraph:first-child:first-letter {
-  border: 1px solid var(--text-color)
+  border: 1px solid var(--text-color);
 }
 
 .content__text-block .content__paragraph:not(:last-child) {
@@ -172,16 +171,16 @@ button:disabled {
 
 .content__picture-caption {
   border-block-end: 1px solid var(--text-color);
-  text-align: center;
   padding: 20px 0;
   font-size: 18px;
+  text-align: center;
 }
 
 .content__blockquote {
   margin: 0 auto 1.5em auto;
-  inline-size: 75%;
   font-style: italic;
   line-height: 200%;
+  inline-size: 75%;
 }
 
 .content__card {
@@ -189,9 +188,9 @@ button:disabled {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  aspect-ratio: 4 / 3;
   margin-block-start: 7%;
   border: 1px solid var(--text-color);
+  aspect-ratio: 4 / 3;
 }
 
 .content__card-title {
@@ -203,14 +202,14 @@ button:disabled {
 }
 
 .colored-text::after {
-  position: absolute;
-  z-index: -1;
-  left: -4px;
-  bottom: 10px;
   content: '';
+  position: absolute;
+  bottom: 10px;
+  left: -4px;
+  z-index: -1;
+  background-color: var(--accent-color);
   inline-size: 103%;
   block-size: 0.27em;
-  background-color: var(--accent-color);
 }
 
 .theme_dark .colored-text::after {
@@ -224,12 +223,12 @@ button:disabled {
 
 .content__list {
   padding-inline-start: 40px;
-  list-style-type: none;
   font-size: 18px;
+  list-style-type: none;
 }
 
 .content__list .content__list-item:not(:last-child) {
-  margin-block-end: 10px; 
+  margin-block-end: 10px;
 }
 
 .content__list-item {
@@ -239,14 +238,14 @@ button:disabled {
 .content__list-item::before {
   content: '';
   position: absolute;
-  left: -25px;
   top: 3px;
-  block-size: 15px;
-  inline-size: 15px;
+  left: -25px;
   background-image: url(../images/marker-light.svg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  background-repeat: no-repeat;
+  block-size: 15px;
+  inline-size: 15px;
 }
 
 .theme_dark .content__list-item::before {
@@ -260,8 +259,8 @@ button:disabled {
 }
 
 .footer__copyright {
-  text-transform: uppercase;
+  color: var(--text-color);
   font-size: 18px;
   text-align: center;
-  color: var(--text-color);
+  text-transform: uppercase;
 }
