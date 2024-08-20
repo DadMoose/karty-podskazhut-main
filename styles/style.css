@@ -132,6 +132,7 @@ button:disabled {
 }
 
 .content-title {
+  /*margin: 7vi 0 2.5vi;*/
   margin-block-start: 7vi;
   margin-block-end: 2.5vi;
   font-size: 30px;
